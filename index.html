@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+    <style>
+        :root, * {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+        .full-width {
+            left: 40%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            max-width: 110vw;
+            position: relative;
+            right: 50%;
+            width: 110vw;
+        }
+
+        .fw-bolder {
+            font-weight: 700 !important; 
+        }
+    </style>
+
+    <nav class="navbar navbar-expand-lg border-bottom">
+        <div class="container   ">
+          <a class="navbar-brand fs-6 fw-bolder" href="#">Bootstrap Themes</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Why Our Themes?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">The Guide</a>
+              </li>
+            </ul>
+            <form class="form-inline form-navbar my-2 my-lg-0 me-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sign in</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sign up</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row my-5 py-5 text-center">
+            <h1 class="display-3 fw-bolder">Themes Built for Developers.</h1>
+            <p class="text-secondary">Component-based frameworks designed and built by the best Bootstrap creators in the world.</p>
+        </div>
+        <div class="row">
+            <img class="img-fluid full-width" src="./assets/banner.webp" alt="">
+        </div>
+        <div class="row row-cols-2 row-cols-md-4 my-4 mb-5 gy-5 text-center">
+            <div class="col border-end">
+                <h4 class="fw-bold fs-6">Average Rating</h4>
+                <p class="text-secondary">4.9/5</p>
+            </div>
+            <div class="col border-end">
+                <h4 class="fw-bold fs-6">Our Guarantee</h4>
+                <p class="text-secondary">100% money back.</p>
+            </div>
+            <div class="col border-end">
+                <h4 class="fw-bold fs-6">Average Rating</h4>
+                <p class="text-secondary">Never pay for an update.</p>
+            </div>
+            <div class="col">
+                <h4 class="fw-bold fs-6">Average Rating</h4>
+                <p class="text-secondary">6 months included</p>
+            </div>
+        </div>
+        <!-- Mobile -->
+        <div class="d-block d-lg-none row pt-5 w-100 text-start">
+            <h2 class="fw-bolder">Built as frameworks<br/> from the ground up.</h2>
+            <p>Each theme is architected as an extension of Bootstrap, built for a specific set of problems. This means not only extending the base components of Bootstrap, but also adding completely new components, utilities, and plugins.</p>
+        </div>
+        <!-- Desktop -->
+        <div class="d-none d-lg-block row pt-5 w-50 text-start">
+            <h2 class="fw-bolder">Built as frameworks<br/> from the ground up.</h2>
+            <p>Each theme is architected as an extension of Bootstrap, built for a specific set of problems. This means not only extending the base components of Bootstrap, but also adding completely new components, utilities, and plugins.</p>
+        </div>
+        <div class="row pb-5 mb-5">
+            <img class="d-none d-lg-block img-fluid" style="transform: translateY(-5%);" src="./assets/framework-progression.webp" alt="">
+            <img class="d-block d-lg-none" src="./assets/framework-progression-mobile.webp" alt="">
+        </div>
+        <div class="row mb-5 pb-5 justify-content-between align-items-center gy-5 flex-column-reverse flex-md-row">
+            <img class="col-12 col-md-7" style="max-height: 400px;" src="./assets/review-process.svg" alt="">
+            <div class="col-12 col-md-5">
+                <h3 class="fw-bolder">Every theme gets<br/> reviewed by us.</h3>
+                <p>The Boostrap team reviews every new theme and update against a set of guidelines we wrote. These cover tons of factors including design, component flexibility, class naming, directory structure, build tooling, plugin reusability…the list goes on and on.</p>
+            </div>
+        </div>
+        <div class="row mb-5 pb-5 justify-content-between align-items-center flex-column flex-md-row gy-4">
+            <div class="col-12 col-md-7">
+                <h3 class="fw-bolder">Build tools and full<br/> documention.</h3>
+                <p>Components, plugins, and build tools are all thoroughly documented with live examples and markup for easier use and customization—just like Bootstrap itself. Not comfortable diving that deep? No worries, you just use the compiled CSS and examples pages!</p>
+                <button class="btn text-white" style="background-color: #7952B3; border-radius: 4px !important;">Explore the Dashboard docs</button>
+            </div>
+            <img class="col-12 col-md-5" style="max-height: 300px" src="./assets/terminal.webp" alt="">
+        </div>
+        <div class="row my-5 py-4 gap-4">
+            <div class="col-12 col-md text-center">
+                <img src="./assets/icon-1.svg" alt="">
+                <h6 class="fw-bolder fs-6 mt-2">Components and examples</h6>
+                <p class="text-secondary" style="font-size: 13px;">Each theme features new components built to match Bootstrap's level of quality and re-usability.</p>
+            </div>
+            <div class="col-12 col-md text-center">
+                <img src="./assets/icon-2.svg" alt="">
+                <h6 class="fw-bolder fs-6 mt-2">Tons of variables</h6>
+                <p class="text-secondary" style="font-size: 13px;">Themes inherit their style from custom variables, like Bootstrap, so basic customization is easy.</p>
+            </div>
+            <div class="col-12 col-md text-center">
+                <img src="./assets/icon-3.svg" alt="">
+                <h6 class="fw-bolder fs-6 mt-2">Source files</h6>
+                <p class="text-secondary" style="font-size: 13px;">Each theme includes all the source and compiled files, making deep customization possible.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
